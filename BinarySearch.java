@@ -86,11 +86,10 @@ final class BinarySearch {
         final int[] randomNumberArray = new int[arraySize];
 
         for (int counter = 0; counter < randomNumberArray.length; counter++) {
-            randomNumberArray[counter] = randNumber.nextInt(MAX) + 1;
+            randomNumberArray[counter] = randNumber.nextInt(MAX);
         }
 
-        final int[] numberArray = randomNumberArray;
-        Arrays.sort(numberArray);
+        Arrays.sort(randomNumberArray);
 
         return randomNumberArray;
     }
